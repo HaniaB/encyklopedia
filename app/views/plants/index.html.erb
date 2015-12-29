@@ -1,0 +1,14 @@
+<h1>Rośliny</h1>
+ <%= link_to 'Nowa roślina', new_plant_path %>
+<table>
+  <tr>
+    <th>Nazwa</th>
+    <th colspan="2"></th>
+  </tr>
+   <% @plants.each do |plant| %>
+    <tr>
+      <td><%= plant.name %></td>
+      
+    </tr>
+  <% end %>
+</table>
